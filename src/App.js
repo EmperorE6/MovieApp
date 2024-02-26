@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useState } from 'react';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Navigation></Navigation>
     </div>
   );
 }
 
-export default App;
+function Navigation(){
+ return (
+<div className='navbarContainer'>
+<div className='title'>
+  <h1>Movies</h1>
+</div>
+<div className='searchBar'>
+  <h2>Search Movies</h2><input type="text" placeholder='search for a movie...' ></input>
+</div>
+</div>
+ );
+ }
+
+ function Movies(){
+  return (
+<div>
+
+</div>
+    );
+ }
+
+ function Favorites(){
+  return (
+<div>
+
+</div>
+    );
+ }
